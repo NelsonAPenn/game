@@ -8,9 +8,9 @@ Alter Flow Path
 
 Attack?
 
-  Is this the same as releasing a charge?
+    Is this the same as releasing a charge?
   
-  Maybe light push back w/ lag if no charge is stored
+    Maybe light push back w/ lag if no charge is stored
 
 
 
@@ -18,4 +18,4 @@ Attack?
 
 Merged Charges
 
-  Ex: Fire + Water = Steam
+    Ex: Fire + Water = Steam
