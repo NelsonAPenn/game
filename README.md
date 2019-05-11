@@ -1,21 +1,14 @@
 # Game with no Name
 
-// User Actions /////////////////////////////
+## User Action
 
-Store / Release Charge
-
-Alter Flow Path
-
-Attack?
-
-    Is this the same as releasing a charge?
+- Store / Release Charge
+- Alter Flow Path
+- Attack?
+  - Is this the same as releasing a charge?
+  - Maybe light push back w/ lag if no charge is stored
   
-    Maybe light push back w/ lag if no charge is stored
+## Concepts
 
-
-
-// Concepts /////////////////////////////////
-
-Merged Charges
-
-    Ex: Fire + Water = Steam
+- Merged Charges
+  - Ex: Fire + Water = Steam
