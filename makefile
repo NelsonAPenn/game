@@ -10,13 +10,13 @@ DBGCOMPILE=$(EVERY) -c -g -O0
 DBGLINK=$(EVERY) -g -O0
 
 all: dbg$(TITLE) $(TITLE)
-$(TITLE):$(OBJECTS)
+$(TITLE):$(addprefix build/, $(OBJECTS))
 	g++ $(addprefix build/, $(OBJECTS)) -o $@ $(LINK)
-dbg$(TITLE):$(addprefix dbg, $(OBJECTS))
+dbg$(TITLE):$(addprefix build/dbg, $(OBJECTS))
 	g++ $(addprefix build/dbg, $(OBJECTS)) -o $@ $(DBGLINK) 
-dbg%.o:%.cpp $(HEADERS)
-	g++ $< -o build/$@ $(DBGCOMPILE)
-%.o:%.cpp $(HEADERS)
-	g++ $< -o build/$@ $(COMPILE) 
+build/dbg%.o:%.cpp $(HEADERS)
+	g++ $< -o $@ $(DBGCOMPILE)
+build/%.o:%.cpp $(HEADERS)
+	g++ $< -o $@ $(COMPILE) 
 clean:
 	rm -f $(TOCLEAN) $(addprefix build/, $(TOCLEAN)) 
