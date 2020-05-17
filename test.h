@@ -1,8 +1,6 @@
 #include <list>
 #include <algorithm>
 #include <iostream>
-#include "sol.h"
-#include "course.h"
 #include <string>
 #include <fstream>
 void testSection(std::string should);
