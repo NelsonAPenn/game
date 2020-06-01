@@ -2,5 +2,9 @@
 class Object
 {
   bool mobile;
+  double mass;
+  // vector position
+  // vector velocity
+  // vector acceleration
   
 };
