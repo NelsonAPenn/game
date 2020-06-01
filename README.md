@@ -1,5 +1,12 @@
 # Game
 
+## Naming conventions
+
+- structs/classes/enums: TitleCase
+- variable names/ object properties / fields / functions: camelCase
+- filenames: snake_case
+
+
 ## Workflow
 
 - All code should be written on local branches branched from `dev`. These local branches should each fix one specific problem, to prevent later hell.
