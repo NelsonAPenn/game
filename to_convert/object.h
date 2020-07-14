@@ -121,7 +121,7 @@ template <typename T> struct vect { // 2d vector, temporary
 	}
 	
 	operator bool() {
-		return x || y;
+    return x || y;
 	}
 	
 	// other conversion operators / generic conversion w/ template
@@ -141,11 +141,12 @@ typedef enum e_collisionBehavior {
 class Object
 {
   bool mobile;
+  bool grounded;
   double mass;
   e_collisionBehavior hitType = ELASTIC;
-  vect<int> position = vect(0,0); // center/corner/whatever
-  vect<int> velocity = vect(0,0);
-  vect<int> acceleration = vect(0,-9);
+  Vector position; // center/corner/whatever
+  Vector velocity;
+  Vector acceleration; // maybe don't need this, depending on how we implement forces
   // we need LWH/radius or whatever to declare area
 };
 
